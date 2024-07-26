@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="text-black border-t pt-4 pb-28 md:pd-4    items-center w-full">
       <div className="container flex flex-col md:flex-row items-center justify-between  gap-y-4">
-        <p className="text-sm mr-5">
+        <p className="text-sm mr-5 dark:text-white">
           Copyright &copy; {currentYear} .All rights reserved 
         </p>
         <div className="flex items-center gap-3">
@@ -25,7 +25,7 @@ const Footer = () => {
                   "rounded-full"
                 )}
               >
-                <Icon className="size-4" />
+                <Icon className="size-4 dark:text-white" />
               </a>
             );
           })}

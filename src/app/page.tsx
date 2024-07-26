@@ -8,6 +8,7 @@ import Contact from "@/containers/contact";
 import ScrollToTop from "@/components/scroll-to-top";
 import Navbar from "@/components/ui/navigation/Navbar";
 import Footer from "@/components/footer";
+import Certificat from "@/containers/Certificat";
 
 const page = () => {
   return (
@@ -17,11 +18,15 @@ const page = () => {
       <Home />
       <About />
       <Skills />
-      <Projects/>
+      <div className="container space-y-16 py-28 ">
+      <Projects />
+      </div>
       <Contact />
       </div>
       <ScrollToTop/>
+      <Certificat/>
       <Footer/>
+      
     </main>
   );
 };

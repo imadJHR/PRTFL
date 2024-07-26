@@ -8,9 +8,9 @@ interface ProjectCardProps {
 
 const ProjectCard: FC<ProjectCardProps> = ({ imagUrl, title }) => {
   return (
-    <article className="relative group border rounded-md shadow cursor-pointer overflow-hidden">
-      <figure className="absolute size-full top-0 left-O bg-gradient-to-t from-background/70 to-transparent" />
-      <Image src={imagUrl} width={220} height={220} alt={title} className="size-full rounded-md group-hover:scale-105 transition" />
+    <article className="relative group border rounded-md shadow cursor-pointer overflow-hidden md:max-h-96 ">
+      <figure className="absolute size-full top-0 left-O " />
+      <Image src={imagUrl} width={120} height={120} alt={title} className="size-full rounded-md group-hover:scale-105 object-cover transition" />
       <h3 className="absolute bottom-2 start-2 text-foreground group-hover:text-primary truncate ">{title}</h3>
     </article>
   );

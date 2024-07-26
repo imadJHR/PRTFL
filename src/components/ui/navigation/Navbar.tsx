@@ -6,9 +6,9 @@ import { ModeToggle } from "./mode-toggle";
 
 const navbar = () => {
   return (
-    <header className="fixed top-0 left-0 py-2 w-full bg-background/60 backdrop-blur-md z-50">
+    <header className="fixed -mt-5 top-0 left-0 py-1.5 w-full bg-background/60 backdrop-blur-md z-50">
       <div className="container py-4 flex items-center justify-between">
-        <Logo />
+        <a href="/"><Logo  /></a>
         <nav className="hidden md:flex items-center gap-4">
           {navlinks.map((link, index) => (
             <a

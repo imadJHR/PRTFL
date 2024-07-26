@@ -21,7 +21,7 @@ import Carousel from "./carousel";
 import InfoItem from "./info-item";
 import { Calendar, Eye, Github, LayoutDashboard, Tags } from "lucide-react";
 import { buttonVariants } from "../ui/button";
-import { cn } from "@/lib/utils";
+
 
 interface ProjectItemProps {
   project: Project;
@@ -30,7 +30,7 @@ interface ProjectItemProps {
 const ProjectItem: FC<ProjectItemProps> = ({ project }) => {
   return (
     <Dialog>
-      <DialogTrigger>
+      <DialogTrigger className="md:h-[24] ">
         <ProjectCard
           imagUrl={urlForImage(project.images[0])}
           title={project.title}
